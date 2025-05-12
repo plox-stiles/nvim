@@ -1,19 +1,22 @@
 return {
 
-  { -- install the colorscheme
-    "navarasu/onedark.nvim",
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
     opts = {
-      style = "darker",
       transparent = true,
-      term_colors = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
     },
   },
 
-  { -- config specific for LazyVim
-
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "tokyonight-night",
     },
   },
 }
